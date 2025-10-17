@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新思想</title>
+    <!-- 内部样式 -->
+    <style>
+        /* 元素选择器 */
+        span{
+            /* color: gray; */
+            /* color: rgb(255, 120, 0);
+            color: rgba(0, 0, 0, 0); */
+            color: #333333;
+        }
+        /* 类选择器 */
+        .cls{
+            color: red;
+        }
+        /* id选择器 */
+        #time{
+            color: blue;
+        }
+        /* id>类选择器>元素选择器 */
+        a{
+            /* 去除超链接的下划线 */
+            text-decoration: none;
+        }
+        p{
+            /* 设置行高 */
+            line-height: 2;
+            /* 设置首行缩进 */
+            text-indent: 2em;
+            
+        }
+        /* 设置容器尺寸 */
+        #content-container {
+            width: 70%;
+            margin: 0 auto;
+        }
+    </style>
+    <!-- 外部样式 -->
+     <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+  
+</head>
+<body>
+   <div id="content-container">
+     <!-- 定义一个一级标题，标题内容“新思想” -->
+     <h1>新思想</h1>
+    <!-- 定义一个超链接，里面展示 央视网 -->
+     <a href="http://www.cctv.com", target="_blank">央视网</a>
+     <!-- 行内样式
+     <span style="color: gray;">2025.05.05</span>  -->
+     <span class="cls" id="time">2025.05.05</span>
+    <br><br>
+     <!-- 视频标签属性 
+     autoplay: 自动播放
+     controls: 显示控制条
+     loop: 循环播放
+     muted: 静音播放
+     src: 视频地址
+     width: 视频宽度
+     height: 视频高度 
+        单位 x：px  y：%
+     -->
+    <!-- 要求自动播放，不静音 -->
+
+     <video src="video/news.mp4" width=100% controls></video>
+    <p> <b>粗体</b>这是一段</p>
+    <p><strong>强调</strong> 这是又一段</p>
+    <!-- img标签属性 
+    src: 图片地址
+    绝对路径：C:/Users/Administrator/Desktop/1.png（不推荐）
+    静态资源：http://127.0.0.1:5500/img/1.png
+    动态资源：http://127.0.0.1:5500/img/1.png?id=1
+    相对路径：img/1.png 
+    ./ 表示当前目录
+    ../ 表示上一级目录
+    width: 图片宽度 宽度高度设置一个就行，会等比例缩放
+    alt: 图片替换文本
+    title: 图片提示文本
+    height: 图片高度
+    -->
+    <img src="img/1.gif" alt="" width=100%></img> 
+   </div>
+</body>
+</html>

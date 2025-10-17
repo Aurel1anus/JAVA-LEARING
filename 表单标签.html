@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- form标签属性 
+ action: 表单提交的地址
+ method: 表单提交方式
+    get: 表单提交方式为get
+      get方式提交数据，数据会以参数形式发送给服务器，会在url中出现，请求大小有限制
+    post: 表单提交方式为post
+      post方式提交数据，数据会以表单数据发送给服务器，不会在url中出现，请求大小无限制
+ enctype: 表单编码类型
+ target: 表单提交目标 
+ autocomplete: 表单自动完成
+ novalidate: 表单验证
+ name: 表单名称
+ 注意：表单项如果想要提交数据，那么form标签的属性必须设置name属性
+ -->
+    <form action="/save" method="post">
+        姓名：<input type="text" name="username"></input>
+        年龄：<input type="text" name="age"></input>
+        <input type="submit" value="提交"></input>
+    </form>
+</body>
+</html>
