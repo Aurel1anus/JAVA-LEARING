@@ -199,7 +199,7 @@
 
                 let result = await axios.get(`https://web-server.itheima.net/emps/list?name=${this.searchForm.name}&gender=${this.searchForm.gender}&job=${this.searchForm.job}`);
                 this.empList = result.data.data;
-            },
+            }, 
             clear(){
                 //清空表单项数据
                 this.searchForm = {name:'', gender:'', job:''}
